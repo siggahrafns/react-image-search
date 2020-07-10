@@ -1,0 +1,98 @@
+
+  .cls-1 {
+    fill: #f2f2f2;
+  }
+  .cls-12,
+  .cls-14,
+  .cls-2,
+  .cls-3,
+  .cls-5,
+  .cls-6,
+  .cls-8,
+  .cls-9 {
+    fill-rule: evenodd;
+  }
+  .cls-3 {
+    fill: #ffd98e;
+  }
+  .cls-10,
+  .cls-11,
+  .cls-13,
+  .cls-4,
+  .cls-7 {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .cls-11,
+  .cls-4 {
+    stroke: #ff8364;
+  }
+  .cls-4 {
+    stroke-width: 5.73px;
+  }
+  .cls-5 {
+    fill: #d18c65;
+  }
+  .cls-6 {
+    fill: #ff8364;
+  }
+  .cls-13,
+  .cls-7 {
+    stroke: #ffd98e;
+  }
+  .cls-7 {
+    stroke-width: 2.83px;
+  }
+  .cls-8 {
+    fill: #6bd5e1;
+  }
+  .cls-9 {
+    fill: #dfdfdf;
+  }
+  .cls-10 {
+    stroke: #6bd5e1;
+  }
+  .cls-10,
+  .cls-11 {
+    stroke-width: 3.11px;
+  }
+  .cls-12 {
+    fill: #1b3c87;
+  }
+  .cls-13 {
+    stroke-width: 4.23px;
+  }
+  .cls-14 {
+    fill: #e49d75;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .searchImg {
+      -moz-column-count: 4;
+      -webkit-column-count: 4;
+      column-count: 4;
+    }
+  }
+  @media (max-width: 1000px) {
+    .searchImg {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .searchImg {
+      position: absolute;
+      bottom: 0;
+      right: -40px;
+      z-index: 1;
+      height: 200px;
+      width: 200px;
+      opacity: 0.7;
+    }
+  }
