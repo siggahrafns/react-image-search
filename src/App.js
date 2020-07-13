@@ -6,6 +6,7 @@ import SearchImages from "./Icons/SearchImages";
 import Four0FourError from "./Icons/Four0FourError";
 import ImageGrid from "./ImageGrid";
 import SearchBox from "./SearchBox";
+import Card from "./Card";
 import "./App.css";
 
 function App() {
@@ -81,11 +82,25 @@ function App() {
         ) : searchValue.length && !searchResults.results.length ? (
           <NothingFound />
         ) : (
-          <SearchImages className="sunna" />
+          <SearchImages />
         )}
       </div>
       {searchResults.results && searchResults.results.length ? (
-        <ImageGrid searchResults={searchResults.results} />
+        <ImageGrid>
+          {searchResults.results.map((item, index) => {
+            const source = item.link.endsWith(".jpg", item.link.length)
+              ? item.link
+              : item.image.thumbnailLink;
+            return (
+              <Card
+                index={index}
+                title={item.title}
+                link={item.image.contextLink}
+                src={source}
+              />
+            );
+          })}
+        </ImageGrid>
       ) : searchResults.hasError ? (
         <h3 className="error">
           <strong>{searchResults.message} </strong>

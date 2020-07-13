@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./SearchBox.css";
 import { SearchIcon } from "./Icons/MaterialIcons";
 
 function SearchBox({ placeholder, searchValue, searchValueChange }) {
