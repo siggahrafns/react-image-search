@@ -43,7 +43,7 @@ function App() {
         const hasItems = res.data.items && res.data.items.length;
         const message = `${
           query.length
-            ? `Hmm... Looks like we have no results matching ${query}`
+            ? `Hmm.. Looks like we have no results matching ${query}`
             : ""
         }`;
         setSearchResults({
@@ -55,7 +55,7 @@ function App() {
       })
       .catch((error) => {
         setSearchResults({
-          message: "Oh no... Looks like we have a problem!",
+          message: "Oh no.. Looks like we have a problem!",
           results: [],
           loading: false,
           hasError: true,
