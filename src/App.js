@@ -71,9 +71,8 @@ function App() {
           <h2>Image Search</h2>
           <SearchBox
             placeholder="Search..."
-            searchValue={searchValue}
-            searchValueChange={(e) => {
-              setSearchValue(e.target.value.trim());
+            searchValueChange={(value) => {
+              setSearchValue(value);
             }}
           />
         </div>
